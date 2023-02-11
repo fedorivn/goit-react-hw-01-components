@@ -13,3 +13,8 @@ return <FriendItem>
 </FriendItem>
 }
 
+FriendListItem.propTypes = {
+    avatar: PropTypes.string.isRequired,
+    friendName: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
+}

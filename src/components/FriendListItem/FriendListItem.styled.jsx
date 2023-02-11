@@ -32,13 +32,20 @@ background-color: rgb(247, 10, 10);
 text-transform: uppercase;
 font-weight: 500;
 margin-left: 30px;
+
+
 `
 
 export const FriendAvatar = styled.img`
 border-radius:50%;
 width: 100px;
 `
-// .status__activ{
-//     background-color: rgb(10, 247, 22);
-// }
+// background-color: ${({ isOnline}) => {
+//     switch (isOnline) {
+//       case 'Online':
+//         return green;
+//       default:
+//         return red;
+//     }
+//   }};
 
