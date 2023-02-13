@@ -7,16 +7,16 @@ export const FriendsList = ({ friends }) => {
   return (
     <Container>
       <FriendsListBlok>
-        {/* {friends.map(({ id, avatar, name, isOnline }) => {
-          return ( */}
+        {friends.map(({ id, avatar, name, isOnline }) => {
+          return (
             <FriendListItem
-            //   key={id}
-            //   friendName={name}
-            //   avatar={avatar}
-            //   isOnline={isOnline}
+              key={id}
+              friendName={name}
+              avatar={avatar}
+              isOnline={isOnline}
             />
-          {/* );
-        })} */}
+          );
+        })} 
       </FriendsListBlok>
     </Container>
   );

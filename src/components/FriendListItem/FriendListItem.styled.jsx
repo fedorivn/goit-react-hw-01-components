@@ -20,32 +20,15 @@ export const FriendStatus = styled.span`
 width: 20px;
 height: 20px;
 border-radius: 50%;
-background-color: rgb(247, 10, 10);
+background-color:${(props) => props.isOnline? 'green': 'red'
+}
 
 `
-export const StatusText = styled.span`
-display: inline-block;
-width: 100px;
-height: 20px;
-border-radius: 20px;
-background-color: rgb(247, 10, 10);
-text-transform: uppercase;
-font-weight: 500;
-margin-left: 30px;
 
-
-`
 
 export const FriendAvatar = styled.img`
 border-radius:50%;
 width: 100px;
 `
-// background-color: ${({ isOnline}) => {
-//     switch (isOnline) {
-//       case 'Online':
-//         return green;
-//       default:
-//         return red;
-//     }
-//   }};
+
 
